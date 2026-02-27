@@ -8,6 +8,8 @@ estimated net profit after fees.
 
 **[Live Demo](https://crypto-arbitrage-tracker-8eewipchv9xackd8w6zmoq.streamlit.app)**
 
+![Dashboard Screenshot](assets/dashboard.png)
+
 ---
 
 ## How it works
@@ -80,6 +82,12 @@ Open http://localhost:8501
 │   └── cloud_fetcher.py         # Direct API mode (no Kafka needed)
 └── docker-compose.yml           # Single-node Kafka (KRaft)
 ```
+
+## Notes
+
+> **Binance on the cloud demo:** Binance blocks requests from cloud provider IPs (AWS, GCP, etc.).
+> The live demo runs on Streamlit Cloud, so only Coinbase and Kraken prices appear there.
+> Running locally with `python main.py` fetches all three exchanges including Binance.
 
 ## Configuration
 
