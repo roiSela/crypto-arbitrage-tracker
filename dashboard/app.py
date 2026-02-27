@@ -209,8 +209,8 @@ for col, symbol in zip(cols, SYMBOLS):
                 status_cls  = "spread-ok"
                 status_text = f"✅ Watching — spread too small"
 
-            min_ex = min(exdata, key=lambda e: exdata[e].price)
-            max_ex = max(exdata, key=lambda e: exdata[e].price)
+            min_ex = min(exdata, key=lambda e: exdata[e])
+            max_ex = max(exdata, key=lambda e: exdata[e])
 
             st.markdown(f"""
             <div class='metric-card'>
