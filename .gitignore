@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Streamlit secrets (never commit real secrets)
+.streamlit/secrets.toml
+
+# Docker volumes
+kafka_data/
+
+# IDE
+.idea/
+.vscode/
