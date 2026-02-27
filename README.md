@@ -2,7 +2,7 @@
 
 A real-time crypto price arbitrage detector built with **Apache Kafka** and **Streamlit**.
 
-Tracks BTC, ETH, and SOL prices across **Binance**, **Coinbase**, and **Kraken** simultaneously.
+Tracks BTC, ETH, and SOL prices across **Coinbase** and **Kraken** on the live demo (and **Binance** when running locally).
 When the same coin is cheaper on one exchange than another, it fires an alert — including an
 estimated net profit after fees.
 
@@ -15,7 +15,7 @@ estimated net profit after fees.
 ## How it works
 
 ```
-Binance API ──┐
+Binance API ──┐  (local only — blocked by Binance on cloud IPs)
 Coinbase API ──┼──► Kafka (raw-prices) ──► Arbitrage Processor ──► Kafka (alerts) ──► Dashboard
 Kraken API  ──┘
 ```
